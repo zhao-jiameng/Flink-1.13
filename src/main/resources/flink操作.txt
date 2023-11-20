@@ -1,0 +1,16 @@
+flink run -m master:8081 -c wordcount.BatchWordCount -p 2
+flink list -a
+flink cancel $id
+
+yarn会话模式：
+    yarn-session.sh -nm name
+
+yarn单作业模式：
+    flink run -d -t yarn-per-job -c
+
+yarn应用模式：
+    flink run-application -t yarn-application -c
+
+指定批处理：
+    -Dexecution.runtime-mode=BATCH
+    env.setRuntimeMode(RuntimeExectuionMode.MATCH)
