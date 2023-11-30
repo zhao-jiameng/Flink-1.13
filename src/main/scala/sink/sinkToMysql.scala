@@ -5,7 +5,6 @@ import java.sql.PreparedStatement
 import org.apache.flink.connector.jdbc.{JdbcConnectionOptions, JdbcSink, JdbcStatementBuilder}
 import org.apache.flink.streaming.api.scala._
 
-case class Event(user:String,url:String,timestamp:Long)
 /**
  *
  * @PROJECT_NAME: flink1.13
